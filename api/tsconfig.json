@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "./dist",
+        "paths": {},
+        "skipLibCheck": true,
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "allowJs": false,
+        "resolveJsonModule": true,
+        "esModuleInterop": true
+    },
+    "include": ["src/**/*.ts", "test/**/*.ts"]
+}
