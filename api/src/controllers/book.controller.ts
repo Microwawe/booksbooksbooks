@@ -11,7 +11,7 @@ class BookController {
         {
             id: 2,
             title: 'Superman',
-            author: "Shaquille O'neal",
+            author: "Shaquille O'Neal",
             description: 'Amet sit dolor ipsum lorem',
         },
     ];
