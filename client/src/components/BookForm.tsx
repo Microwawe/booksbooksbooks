@@ -26,7 +26,7 @@ function BookForm(props: BookListProps) {
                 minLength={1}
                 value={book.title}
                 onChange={handleInputChange}
-                className="border-gray-400 border rounded-md"
+                className="border border-gray-400 rounded-md"
             />
             <label htmlFor="author">Author</label>
             <input
@@ -35,7 +35,7 @@ function BookForm(props: BookListProps) {
                 minLength={1}
                 value={book.author}
                 onChange={handleInputChange}
-                className="border-gray-400 border rounded-md"
+                className="border border-gray-400 rounded-md"
             />
             <label htmlFor="desc">Description</label>
             <textarea
@@ -44,7 +44,7 @@ function BookForm(props: BookListProps) {
                 minLength={1}
                 value={book.description}
                 onChange={handleInputChange}
-                className="border-gray-400 border rounded-md"
+                className="border border-gray-400 rounded-md"
             />
             <div className="flex gap-2 mt-4">
                 <button
@@ -58,6 +58,7 @@ function BookForm(props: BookListProps) {
                     onClick={() => props.handleClick(book, Action.UPDATE)}
                     className="btn"
                     type="button"
+                    disabled={!book.id}
                 >
                     Save
                 </button>
@@ -65,6 +66,7 @@ function BookForm(props: BookListProps) {
                     onClick={() => props.handleClick(book, Action.DELETE)}
                     className="btn"
                     type="button"
+                    disabled={!book.id}
                 >
                     Delete
                 </button>

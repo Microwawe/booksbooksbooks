@@ -1,20 +1,7 @@
 import { Request, Response } from 'express';
 
 class BookController {
-    private books = [
-        {
-            id: 1,
-            title: 'Book of life',
-            author: 'Leroy Jenkins',
-            description: 'Lorem ipsum dolor sit amet',
-        },
-        {
-            id: 2,
-            title: 'Superman',
-            author: "Shaquille O'Neal",
-            description: 'Amet sit dolor ipsum lorem',
-        },
-    ];
+    private books = [];
 
     getAllBooks = (req: Request, res: Response) => {
         res.status(200).json(this.books);
